@@ -120,7 +120,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Process.h" />
-    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="infile" />
