@@ -24,12 +24,18 @@
     <ClCompile Include="Process_Sch_Base.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FCFS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Process.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Process_Sch_Base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FCFS.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

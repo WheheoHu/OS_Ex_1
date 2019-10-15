@@ -115,11 +115,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FCFS.cpp" />
     <ClCompile Include="Process.cpp" />
     <ClCompile Include="Process_Scheduling.cpp" />
     <ClCompile Include="Process_Sch_Base.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FCFS.h" />
     <ClInclude Include="Process.h" />
     <ClInclude Include="Process_Sch_Base.h" />
   </ItemGroup>

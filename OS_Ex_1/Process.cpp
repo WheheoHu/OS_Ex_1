@@ -15,6 +15,15 @@ Process::Process(std::string ProcessName, double Arrival_time, double Service_ti
 	Process();
 }
 
+Process::Process(std::string ProcessName, double Arrival_time, double Service_time, int Weight)
+{
+	this->Process_name = ProcessName;
+	this->Arrival_time = Arrival_time;
+	this->Service_time = Service_time;
+	this->Weight = Weight;
+	Process();
+}
+
 
 Process::~Process()
 {
@@ -60,4 +69,9 @@ double Process::getTurnaround_time()
 double Process::getWeight_Turnaround_time()
 {
 	return this->Weight_Turnaround_time;
+}
+
+int Process::getWeight()
+{
+	return this->Weight;
 }

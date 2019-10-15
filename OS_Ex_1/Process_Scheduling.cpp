@@ -3,7 +3,7 @@
 #include <vector>
 #include <fstream>
 
-
+#include"FCFS.h"
 //Global
 static int Process_Num = 0;
 
@@ -26,6 +26,8 @@ int main() {
 		All_Process.push_back(Process(temp_process_name,temp_arrival_time,temp_service_time));
 	}
 
+	FCFS fcfs(All_Process);
+	fcfs.start();
 
 
 	system("pause");

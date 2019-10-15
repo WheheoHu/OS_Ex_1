@@ -6,6 +6,16 @@ Process_Sch_Base::Process_Sch_Base()
 {
 }
 
+Process_Sch_Base::Process_Sch_Base(std::vector<Process> processes)
+{
+	this->processes = processes;
+	this->Process_num = processes.size();
+}
+
+
+void Process_Sch_Base::start()
+{
+}
 
 Process_Sch_Base::~Process_Sch_Base()
 {
