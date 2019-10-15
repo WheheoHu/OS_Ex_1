@@ -1,6 +1,10 @@
 #pragma once
 #include <vector>
+#include <fstream>
 #include "Process.h"
+
+
+
 class Process_Sch_Base
 {
 public:
@@ -16,5 +20,10 @@ public:
 
 	std::vector<Process> processes;
 	int Process_num;
+	std::fstream  outfile;
+
+private:
+
+
 };
 

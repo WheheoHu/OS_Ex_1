@@ -2,7 +2,7 @@
 
 
 
-Process::Process()
+Process::Process():Weight(0)
 {
 	std::cout << "Process start!\n";
 }
@@ -50,10 +50,10 @@ double Process::getService_time()
 	return this->Service_time;
 }
 
-double Process::getStart_time()
-{
-	return this->Start_time;
-}
+//double Process::getStart_time()
+//{
+//	return this->Start_time;
+//}
 
 double Process::getEnd_time()
 {

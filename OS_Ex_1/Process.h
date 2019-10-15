@@ -17,7 +17,7 @@ public:
 	std::string getProcess_name();
 	double getArrival_time();
 	double getService_time();
-	double getStart_time();
+	//double getStart_time();
 	double getEnd_time();
 	double getTurnaround_time();
 	double getWeight_Turnaround_time();
@@ -27,16 +27,18 @@ public:
 			return Arrival_time > a.Arrival_time;
 		return Service_time > a.Service_time;
 	}
-private:
-	int pos;
 	std::string Process_name;
 	double Arrival_time;
 	double Service_time;
-	double Start_time;
+	//double Start_time;
 	double End_time;
 	double Turnaround_time;//周转时间
 	double Weight_Turnaround_time;//带权周转时间
 
 	int Weight;//优先级
+	int pos;
+private:
+	
+	
 };
 
