@@ -29,7 +29,6 @@ int main() {
 	FCFS fcfs(All_Process);
 	fcfs.start();
 
-
 	system("pause");
 	return 0;
 }

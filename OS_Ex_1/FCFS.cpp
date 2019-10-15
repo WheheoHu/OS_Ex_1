@@ -35,10 +35,10 @@ void FCFS::start()
 		outfile << iter->getProcess_name() <<" "<< iter->getArrival_time() << " " << iter->getService_time() << " " << iter->getEnd_time() << " " << iter->getTurnaround_time() << " " << iter->getWeight_Turnaround_time() << std::endl;
 	}
 	
-		
+	outfile.close();
 }
 
 FCFS::~FCFS()
 {
-	outfile.close();
+	
 }
