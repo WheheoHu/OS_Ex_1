@@ -13,40 +13,49 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Proce_Sch">
+      <UniqueIdentifier>{080acbaa-9640-4bb9-9f76-6b492492c555}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Proce_Sch\base">
+      <UniqueIdentifier>{ea7e122c-26a8-4e58-8176-2f78d50ea340}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Process">
+      <UniqueIdentifier>{8ca2102a-5542-4e20-bad2-808292eb00ef}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Process.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Process_Scheduling.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Process_Sch_Base.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="SJF.cpp">
+      <Filter>Proce_Sch</Filter>
     </ClCompile>
     <ClCompile Include="FCFS.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Proce_Sch</Filter>
     </ClCompile>
-    <ClCompile Include="SJF.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Process_Sch_Base.cpp">
+      <Filter>Proce_Sch\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Process.cpp">
+      <Filter>Process</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Process.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Process_Sch_Base.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="SJF.h">
+      <Filter>Proce_Sch</Filter>
     </ClInclude>
     <ClInclude Include="FCFS.h">
-      <Filter>Header Files</Filter>
+      <Filter>Proce_Sch</Filter>
     </ClInclude>
-    <ClInclude Include="SJF.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Process_Sch_Base.h">
+      <Filter>Proce_Sch\base</Filter>
+    </ClInclude>
+    <ClInclude Include="Process.h">
+      <Filter>Process</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="infile">
+    <None Include="inFCFS">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>

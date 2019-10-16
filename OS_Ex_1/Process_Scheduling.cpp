@@ -14,11 +14,12 @@ int main() {
 	fcfstest();
 	
 
+
 	system("pause");
 	return 0;
 }
 void fcfstest() {
-	std::fstream infile("infile", std::ios::in);
+	std::fstream infile("inFCFS", std::ios::in);
 	infile >> Process_Num;
 	std::cout << Process_Num << std::endl;
 

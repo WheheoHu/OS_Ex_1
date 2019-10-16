@@ -7,7 +7,6 @@ class SJF :
 	public Process_Sch_Base
 {
 public:
-	SJF();
 	SJF(std::vector<Process> processes);
 	void start();
 	~SJF();
