@@ -1,5 +1,5 @@
 #include "FCFS.h"
-#include <iostream>
+//#include <iostream>
 
 
 FCFS::FCFS(std::vector<Process> processes):Process_Sch_Base(processes)
@@ -16,7 +16,6 @@ void FCFS::start()
 	temp.Turnaround_time = temp.End_time - temp.Service_time;
 	temp.Weight_Turnaround_time = temp.Turnaround_time / temp.Service_time;
 
-	//std::vector<Process>::iterator iter = processes.begin();
 	for (auto iter = processes.begin()+1; iter != processes.end(); iter++)
 	{
 		auto temp = (--iter)->End_time;

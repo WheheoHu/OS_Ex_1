@@ -119,11 +119,13 @@
     <ClCompile Include="Process.cpp" />
     <ClCompile Include="Process_Scheduling.cpp" />
     <ClCompile Include="Process_Sch_Base.cpp" />
+    <ClCompile Include="SJF.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FCFS.h" />
     <ClInclude Include="Process.h" />
     <ClInclude Include="Process_Sch_Base.h" />
+    <ClInclude Include="SJF.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="infile" />
