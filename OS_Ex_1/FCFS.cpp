@@ -1,6 +1,6 @@
 #include "FCFS.h"
 //#include <iostream>
-
+#include <algorithm>
 
 FCFS::FCFS(std::vector<Process> processes):Process_Sch_Base(processes)
 {
@@ -10,6 +10,7 @@ FCFS::FCFS(std::vector<Process> processes):Process_Sch_Base(processes)
 
 void FCFS::start()
 {
+	std::sort(processes.begin(), processes.end(), cmp);
 	auto &temp = processes[0];
 	
 	temp.End_time = temp.Arrival_time + temp.Service_time;
@@ -28,7 +29,7 @@ void FCFS::start()
 	}
 
 
-	outfile << "进程名 " << "到达时间 " << "服务时间 " << "完成时间 " << "周转时间 "<<"带权周转时间"<<std::endl;
+	//outfile << "进程名 " << "到达时间 " << "服务时间 " << "完成时间 " << "周转时间 "<<"带权周转时间"<<std::endl;
 	for (auto iter = processes.begin(); iter != processes.end(); iter++)
 	{
 		outfile << iter->getProcess_name() <<" "<< iter->getArrival_time() << " " << iter->getService_time() << " " << iter->getEnd_time() << " " << iter->getTurnaround_time() << " " << iter->getWeight_Turnaround_time() << std::endl;
@@ -40,4 +41,9 @@ void FCFS::start()
 FCFS::~FCFS()
 {
 	
+}
+
+bool FCFS::cmp(Process & _a, Process & _b)
+{
+	return _a.Arrival_time < _b.Arrival_time;
 }

@@ -10,5 +10,8 @@ public:
 	void start();
 
 	~FCFS();
+
+private:
+	static	bool cmp(Process &_a, Process &_b);
 };
 

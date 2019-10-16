@@ -9,6 +9,7 @@ class SJF :
 public:
 	SJF(std::vector<Process> processes);
 	void start();
+	static bool cmp(Process &a, Process &b);
 	~SJF();
 };
 
