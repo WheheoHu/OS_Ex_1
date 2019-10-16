@@ -17,9 +17,12 @@ int main() {
 	fcfstest();
 	sjftest();
 
-	system("pause");
+	//system("pause");
 	return 0;
 }
+
+
+
 void fcfstest() {
 	std::fstream infile("inFCFS", std::ios::in);
 	infile >> Process_Num;
