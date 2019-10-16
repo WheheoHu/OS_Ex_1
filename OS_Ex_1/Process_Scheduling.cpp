@@ -17,7 +17,6 @@ int main() {
 	fcfstest();
 	sjftest();
 
-
 	system("pause");
 	return 0;
 }

@@ -2,9 +2,10 @@
 
 
 
-Process::Process():Weight(0)
+Process::Process()
 {
 	std::cout << "Process start!\n";
+	
 }
 
 Process::Process(std::string ProcessName, double Arrival_time, double Service_time)
@@ -12,6 +13,8 @@ Process::Process(std::string ProcessName, double Arrival_time, double Service_ti
 	this->Process_name = ProcessName;
 	this->Arrival_time = Arrival_time;
 	this->Service_time = Service_time;
+	this->Weight = 0;
+	this->isfinished = 0;
 	Process();
 }
 
@@ -50,10 +53,6 @@ double Process::getService_time()
 	return this->Service_time;
 }
 
-//double Process::getStart_time()
-//{
-//	return this->Start_time;
-//}
 
 double Process::getEnd_time()
 {

@@ -1,5 +1,7 @@
 SJF here
-aaaa 1
-bbbb 8
-dddd 10
-cccc 20
+
+aaaa	 1 2 3 1 0.5
+dddd	 10 23 33 23 1
+bbbb	 15 6 39 24 4
+cccc	 20 23 62 42 1.82609
+eeee	 10 40 102 92 2.3
