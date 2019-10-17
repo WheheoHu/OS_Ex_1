@@ -1,7 +1,9 @@
 FCFS here
 
-aaaa 1 2 3 1 0.5
-dddd 10 23 26 16 0.695652
-eeee 10 40 66 56 1.4
-bbbb 15 6 72 57 9.5
-cccc 20 23 95 75 3.26087
+    P1     1     2     3     1       0.5
+    P4    10    23    26    16  0.695652
+    P5    10    40    66    56       1.4
+    P2    15     6    72    57       9.5
+    P3    20    20    92    72       3.6
+Avg turnaound time : 11.2
+Avg weight turnaound time : 3.13913

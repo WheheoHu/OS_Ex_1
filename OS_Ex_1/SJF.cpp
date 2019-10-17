@@ -41,10 +41,11 @@ void SJF::start()
 
 
 
-
-
-
 	//Output to file 
+
+	double sum_ta_time = 0;
+	double sum_wta_time = 0;
+
 	for (auto iter : processes)
 	{
 		outfile << std::setw(6)<< iter.getProcess_name()
@@ -52,10 +53,14 @@ void SJF::start()
 			<< std::setw(6) << iter.getService_time()
 			<< std::setw(6) << iter.getEnd_time() 
 			<< std::setw(6) << iter.getTurnaround_time()
-			<< std::setw(6) << iter.getWeight_Turnaround_time() 
-			<< std::setw(6) << std::endl;
+			<< std::setw(10) << iter.getWeight_Turnaround_time() 
+			 << std::endl;
+		sum_ta_time += iter.getArrival_time();
+		sum_wta_time += iter.getWeight_Turnaround_time();
 	}
 
+	outfile << "Avg turnaound time : "<<sum_ta_time/Process_num<<std::endl;
+	outfile << "Avg weight turnaound time : " << sum_wta_time / Process_num << std::endl;
 
 	outfile.close();
 }

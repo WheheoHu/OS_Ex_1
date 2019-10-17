@@ -1,6 +1,7 @@
 #include "FCFS.h"
 //#include <iostream>
 #include <algorithm>
+#include <iomanip>
 
 FCFS::FCFS(std::vector<Process> processes) :Process_Sch_Base(processes)
 {
@@ -30,11 +31,26 @@ void FCFS::start()
 	}
 
 
-	//outfile << "进程名 " << "到达时间 " << "服务时间 " << "完成时间 " << "周转时间 "<<"带权周转时间"<<std::endl;
-	for (auto iter = processes.begin(); iter != processes.end(); iter++)
+	//Output to file 
+
+	double sum_ta_time = 0;
+	double sum_wta_time = 0;
+
+	for (auto iter : processes)
 	{
-		outfile << iter->getProcess_name() << " " << iter->getArrival_time() << " " << iter->getService_time() << " " << iter->getEnd_time() << " " << iter->getTurnaround_time() << " " << iter->getWeight_Turnaround_time() << std::endl;
+		outfile << std::setw(6) << iter.getProcess_name()
+			<< std::setw(6) << iter.getArrival_time()
+			<< std::setw(6) << iter.getService_time()
+			<< std::setw(6) << iter.getEnd_time()
+			<< std::setw(6) << iter.getTurnaround_time()
+			<< std::setw(10) << iter.getWeight_Turnaround_time()
+			<< std::endl;
+		sum_ta_time += iter.getArrival_time();
+		sum_wta_time += iter.getWeight_Turnaround_time();
 	}
+
+	outfile << "Avg turnaound time : " << sum_ta_time / Process_num << std::endl;
+	outfile << "Avg weight turnaound time : " << sum_wta_time / Process_num << std::endl;
 
 	outfile.close();
 }
