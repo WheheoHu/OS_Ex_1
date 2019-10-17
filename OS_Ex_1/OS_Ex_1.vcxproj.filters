@@ -39,6 +39,9 @@
     <ClCompile Include="Process.cpp">
       <Filter>Process</Filter>
     </ClCompile>
+    <ClCompile Include="Priority_Scheduling.cpp">
+      <Filter>Proce_Sch</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SJF.h">
@@ -53,12 +56,18 @@
     <ClInclude Include="Process.h">
       <Filter>Process</Filter>
     </ClInclude>
+    <ClInclude Include="Priority_Scheduling.h">
+      <Filter>Proce_Sch</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="inFCFS">
       <Filter>Resource Files</Filter>
     </None>
     <None Include="inSJF">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="inPrioritySch">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>

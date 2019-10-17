@@ -116,6 +116,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="FCFS.cpp" />
+    <ClCompile Include="Priority_Scheduling.cpp" />
     <ClCompile Include="Process.cpp" />
     <ClCompile Include="Process_Scheduling.cpp" />
     <ClCompile Include="Process_Sch_Base.cpp" />
@@ -123,12 +124,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FCFS.h" />
+    <ClInclude Include="Priority_Scheduling.h" />
     <ClInclude Include="Process.h" />
     <ClInclude Include="Process_Sch_Base.h" />
     <ClInclude Include="SJF.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="inFCFS" />
+    <None Include="inPrioritySch" />
     <None Include="inSJF" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
