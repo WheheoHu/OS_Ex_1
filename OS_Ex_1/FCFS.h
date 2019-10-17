@@ -12,6 +12,6 @@ public:
 	~FCFS();
 
 private:
-	static	bool cmp(Process &_a, Process &_b);
+	static	bool cmp_arrivaltime(Process &_a, Process &_b);
 };
 

@@ -12,7 +12,8 @@ FCFS::FCFS(std::vector<Process> processes) :Process_Sch_Base(processes)
 void FCFS::start()
 {
 	outfile << "FCFS here\n" << std::endl;
-	std::sort(processes.begin(), processes.end(), cmp);
+	std::sort(processes.begin(), processes.end(), cmp_arrivaltime);
+
 	auto &temp = processes[0];
 
 	temp.End_time = temp.Arrival_time + temp.Service_time;
@@ -60,7 +61,7 @@ FCFS::~FCFS()
 
 }
 
-bool FCFS::cmp(Process & _a, Process & _b)
+bool FCFS::cmp_arrivaltime(Process & _a, Process & _b)
 {
 	return _a.Arrival_time<_b.Arrival_time;
 }

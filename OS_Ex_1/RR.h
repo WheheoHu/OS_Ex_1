@@ -4,10 +4,10 @@ class RR :
 	public Process_Sch_Base
 {
 public:
-	RR(std::vector<Process> processes,int q);
+	RR(std::vector<Process> ,int );
 	void start();
 	static bool cmp_arrival_time(Process &, Process &);
-	int q;
+	int quantum;
 	~RR();
 };
 

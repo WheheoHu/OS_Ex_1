@@ -4,19 +4,22 @@
 #include <iomanip>
 
 
-RR::RR(std::vector<Process> processes, int q):Process_Sch_Base(processes)
+RR::RR(std::vector<Process> processes, int quantum):Process_Sch_Base(processes)
 {
-	this->q = q;
+	this->quantum = quantum;
 	outfile.open("outRR", std::ios::out);
 }
 
 void RR::start()
 {
-
+	//std::vector<Process> ans;
+	//int finished = 0;
 	outfile << "RR here\n" << std::endl;
 	std::sort(processes.begin(), processes.end(), cmp_arrival_time);
-
+	
 	//RR here
+	
+
 
 
 	//Output to file 
