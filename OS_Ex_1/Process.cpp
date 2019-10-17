@@ -4,7 +4,7 @@
 
 Process::Process()
 {
-	std::cout << "Process start!\n";
+	//std::cout << "Process start!\n";
 	
 }
 

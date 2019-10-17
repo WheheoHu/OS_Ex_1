@@ -42,6 +42,9 @@
     <ClCompile Include="Priority_Scheduling.cpp">
       <Filter>Proce_Sch</Filter>
     </ClCompile>
+    <ClCompile Include="RR.cpp">
+      <Filter>Proce_Sch</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SJF.h">
@@ -59,6 +62,9 @@
     <ClInclude Include="Priority_Scheduling.h">
       <Filter>Proce_Sch</Filter>
     </ClInclude>
+    <ClInclude Include="RR.h">
+      <Filter>Proce_Sch</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="inFCFS">
@@ -68,6 +74,9 @@
       <Filter>Resource Files</Filter>
     </None>
     <None Include="inPrioritySch">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="inRR">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>

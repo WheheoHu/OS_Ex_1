@@ -120,6 +120,7 @@
     <ClCompile Include="Process.cpp" />
     <ClCompile Include="Process_Scheduling.cpp" />
     <ClCompile Include="Process_Sch_Base.cpp" />
+    <ClCompile Include="RR.cpp" />
     <ClCompile Include="SJF.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -127,11 +128,13 @@
     <ClInclude Include="Priority_Scheduling.h" />
     <ClInclude Include="Process.h" />
     <ClInclude Include="Process_Sch_Base.h" />
+    <ClInclude Include="RR.h" />
     <ClInclude Include="SJF.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="inFCFS" />
     <None Include="inPrioritySch" />
+    <None Include="inRR" />
     <None Include="inSJF" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
